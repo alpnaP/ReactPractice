@@ -73,3 +73,9 @@
   margin-top: 0;
   width: 200;
 }
+footer {
+  position: fixed;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+}

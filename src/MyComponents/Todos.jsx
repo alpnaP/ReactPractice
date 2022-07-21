@@ -33,33 +33,33 @@ function Todos(props) {
   return (
     <div className="container my-3 card-border" style={myStyle}>
       <h3 className="my-3">Backlog List</h3>
-      <div class="row ">
-        <div class="col-sm-3">
-        <div class="col-sm-12 card card-h-100">
+      <div className="row ">
+        <div className="col-sm-3">
+        <div className="col-sm-12 card card-h-100">
           <h3>Backlog</h3>
           {backlogList.map((item) => {
             return <TodoItem {...item} removeTodoAction={()=>props.removeTodoAction(item.cid,1)} moveLeftTodoAction={()=>props.moveLeftTodoAction(item,1)} moveRightAction={()=>props.moveRightAction(item,1)}/>
           })}
         </div>
         </div>
-        <div class="col-sm-3">
-        <div class="col-sm-12 card card-h-100">
+        <div className="col-sm-3">
+        <div className="col-sm-12 card card-h-100">
           <h3>Todo</h3>
           {todosList.map((item) => {
             return <TodoItem {...item} removeTodoAction={()=>props.removeTodoAction(item.cid,2)} moveLeftTodoAction={()=>props.moveLeftTodoAction(item,2)} moveRightAction={()=>props.moveRightAction(item,2)}/>
           })}
         </div>
         </div>
-        <div class="col-sm-3">
-        <div class="col-sm-12 card card-h-100">
+        <div className="col-sm-3">
+        <div className="col-sm-12 card card-h-100">
           <h3>In-Progress</h3>
           {inProgressList.map((item) => {
             return <TodoItem {...item} removeTodoAction={()=>props.removeTodoAction(item.cid,3)} moveLeftTodoAction={()=>props.moveLeftTodoAction(item,3)} moveRightAction={()=>props.moveRightAction(item,3)}/>
           })}
         </div>
         </div>
-        <div class="col-sm-3">
-        <div class="col-sm-12 card card-h-100">
+        <div className="col-sm-3">
+        <div className="col-sm-12 card card-h-100">
           <h3>Done</h3>
           {doneList.map((item) => {
             return <TodoItem {...item} removeTodoAction={()=>props.removeTodoAction(item.cid,4)} moveLeftTodoAction={()=>props.moveLeftTodoAction(item,4)} moveRightAction={()=>props.moveRightAction(item,4)}/>
